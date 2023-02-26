@@ -7,18 +7,16 @@ export default function Home() {
       <Head>
         <title>Fresh App</title>
       </Head>
-      <div class="p-4 mx-auto max-w-screen-md">
-        <img
-          src="/logo.svg"
-          class="w-32 h-32"
-          alt="the fresh logo: a sliced lemon dripping with juice"
-        />
-        <p class="my-6">
-          Welcome to `fresh`. Try updating this message in the ./routes/index.tsx
-          file, and refresh.
-        </p>
-        <Counter start={3} />
-      </div>
+      <main class="bg-[#0f0f0f] text-[#f0f0f0]  flex flex-col justify-center items-center w-[100vw] h-[100vh]">
+        <h2 className="text-3xl font-bold">Todos App</h2>
+
+        <a
+          href="/todos"
+          class="bg-transparent border-2 border-white rounded-xl mt-5 px-5 py-2"
+        >
+          Create Todos
+        </a>
+      </main>
     </>
   );
 }

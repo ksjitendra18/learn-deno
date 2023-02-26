@@ -10,6 +10,7 @@ export default function Greet(props: PageProps) {
         todayDate.getMonth() +
         "/" +
         todayDate.getFullYear()}
+      <div>This is changing {todayDate.getMilliseconds()}</div>
     </div>
   );
 }
